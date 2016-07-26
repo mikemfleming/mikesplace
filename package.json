@@ -1,0 +1,14 @@
+{
+  "name": "mikemfleming",
+  "version": "1.0.0",
+  "description": "The Coolest Spot On The Web",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "nodemon server/main.js"
+  },
+  "author": "mikemfleming",
+  "license": "ISC"
+}
