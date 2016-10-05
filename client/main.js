@@ -1,6 +1,8 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 
+import Navbar from './components/Navbar';
+
 class App extends Component {
 		constructor(){
 			super()
@@ -8,7 +10,9 @@ class App extends Component {
 
 		render(){
 			return (
-				<div>main.js is alive and kickin</div>
+				<div>
+					<Navbar />
+				</div>
 			)
 		}
 }
