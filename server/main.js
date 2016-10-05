@@ -1,17 +1,22 @@
 var express = require('express');
+var browserify = require('browserify-middleware');
 var app = express();
 var path = require('path');
 
-var main = path.join(__dirname, '../public/index.html')
+var assetFolder = path.join(__dirname + '/../client')
+console.log(assetFolder)
+app.use(express.static(assetFolder));
 
-app.set('port', (process.env.PORT || 5000));
+app.get('/', (req, res) => {
+	res.sendFile(assetFolder + '/index.html')
+})
 
-app.use(express.static(__dirname + '/Public'));
+app.get('/app-bundle.js', 
+	browserify('./client/main.js', {
+		transform: [[require('babelify'), { presets: ['es2015', 'react']}]]
+	})
+);
 
-app.get('/', function(request, response) {
-  response.sendFile(main);
-});
-
-app.listen(app.get('port'), function() {
-  console.log('Running on ', app.get('port'));
-});
+var port = process.env.PORT || 8080
+app.listen(port);
+console.log('listening on localhost:' + port)
