@@ -4,7 +4,6 @@ var app = express();
 var path = require('path');
 
 var assetFolder = path.join(__dirname + '/../client')
-console.log(assetFolder)
 app.use(express.static(assetFolder));
 
 app.get('/', (req, res) => {

@@ -1,10 +1,16 @@
-import ReactDom from 'react-dom';
-import React from 'react';
+import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 
-const App = () => {
-		return (
-			<div>Hey Hi how are yaaaa</div>
-		)
+class App extends Component {
+		constructor(){
+			super()
+		}
+
+		render(){
+			return (
+				<div>main.js is alive and kickin</div>
+			)
+		}
 }
 
-ReactDOM.render(<App />, document.getElementByIid('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
