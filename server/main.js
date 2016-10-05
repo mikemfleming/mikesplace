@@ -3,7 +3,7 @@ var browserify = require('browserify-middleware');
 var app = express();
 var path = require('path');
 
-var assetFolder = path.join(__dirname + '/../client')
+var assetFolder = path.join(__dirname + '/../client/public')
 app.use(express.static(assetFolder));
 
 app.get('/', (req, res) => {
