@@ -1,0 +1,26 @@
+.welcome, .skills, .projects, .personal, .contact 
+{
+	height: 100vh;
+	width: 100%;
+	left: -1%;
+}
+
+.welcome {
+	background-color: #FCFCFC;
+}
+
+.skills {
+	background-color: #4B4E6D;	
+}
+
+.projects {
+	background-color: #84DCC6;	
+}
+
+.personal {
+	background-color: #222222;	
+}
+
+.contact {
+	background-color: #95A3B3;	
+}
