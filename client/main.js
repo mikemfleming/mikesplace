@@ -1,6 +1,8 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
 
+import Title from './components/Title';
 import Welcome from './components/Welcome';
 import Personal from './components/personal';
 import Skills from './components/Skills';
@@ -15,6 +17,7 @@ class App extends Component {
 		render(){
 			return (
 				<div>
+					<Title />
 					<Welcome />
 					<Skills />
 					<Projects />
