@@ -11,7 +11,7 @@
 }
 
 .title > h1 {
-	margin-top: 0;
+	margin: auto;
 	text-align: center;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .skills {
-	background-color: #4B4E6D;	
+	background-color: #F06543;	
 }
 
 .projects {
-	background-color: #84DCC6;	
+	background-color: #FCFCFC;	
 }
 
 .personal {
@@ -38,19 +38,20 @@
 
 .welcome > img {
 	background-image: url(https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/10915040_10203552336279533_3480927773528959396_o.jpg);
-	border-radius: 10px;
+}
+
+.gps > a > img {
+		border: 6px solid #222222;
+		border-radius: 10px;
 }
 
 @media only screen and (min-device-width: 668px) {
-	h1 {
-		color: orange;
-	}
 
 	.content-text {
-	font-size: 20px;
+		font-size: 20px;
 	}
 
-	.welcome {
+	.title, .welcome, .skills, .projects {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
@@ -58,15 +59,39 @@
 		flex-wrap: wrap;
 	}
 
+	.welcome > .content-text, .gps > .content-text {
+		flex-basis: 30em;
+		order: 1;
+	}
+
+	.welcome > img, .gps > a {
+		flex-basis: 30em;
+		order: 2;
+		width: 40%;
+	}
+
+	a > img {
+		width: 100%;
+	}
+
 	.welcome > .content-text {
 		flex-basis: 30em;
 		order: 1;
 	}
 
-	.welcome > img {
+	.projects > .gps {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		order: 1;
+	}
+
+	.skills > .content-text {
 		flex-basis: 30em;
-		order: 2;
-		width: 40%;
+		order: 1;
 	}
 
 }
@@ -80,7 +105,7 @@
 		font-size: 40px;
 	}
 
-	.welcome {
+	.title, .welcome, .skills, .projects {
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
@@ -96,6 +121,12 @@
 	.welcome > img {
 		width: 60%;
 		order: 2;
+		margin: auto;
+	}
+
+	.skills > .content-text {
+		width: 60%;
+		order: 1;
 		margin: auto;
 	}
 }
