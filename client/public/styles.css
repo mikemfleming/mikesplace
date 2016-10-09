@@ -52,6 +52,8 @@
 		border-radius: 10px;
 }
 
+/* ****** LARGER THAN IPHONE ****** */
+
 @media only screen and (min-device-width: 668px) {
 
 	.content-text {
@@ -101,35 +103,47 @@
 		order: 1;
 	}
 
+	.gps > a, .austin-art > a, .overlord > a {
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+
 }
+
+/* ****** IPHONE 6 AND SMALLER ****** */
 
 @media only screen and (max-device-width: 667px) {
 
-	h1 {
-		color: red
+	.gps > a, .austin-art > a, .overlord > a {
+		padding-top: 10%;
+		padding-bottom: 10%;
 	}
 
 	.content-text {
 		font-size: 40px;
 	}
 
-	.title, .welcome, .skills, .projects {
+	.title, .welcome, .skills, .projects, .projects > .gps, .projects > .austin-art, .projects > .overlord {
 		display: flex;
 		flex-direction: column;
 		flex-flow: wrap;
 		justify-content: space-around;
 	}
 
-	.welcome > .content-text {
+	.welcome > .content-text, .gps > .content-text, .austin-art > .content-text, .overlord > .content-text {
 		width: 60%;
 		order: 1;
 		margin: auto;
 	}
 
-	.welcome > img {
+	.welcome > img, .gps > a, .austin-art > a, .overlord > a {
 		width: 60%;
 		order: 2;
 		margin: auto;
+	}
+
+	a > img {
+		width: 100%;
 	}
 
 	.skills > .content-text {
