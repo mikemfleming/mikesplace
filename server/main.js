@@ -15,8 +15,12 @@ app.use('/sayHello', router);
 router.post('/', handleSayHello);
 
 function handleSayHello (req, res) {
+
+	// TO DO:
+	// - where is my body???
+	// - 'hellow world from undefined'
 	console.log(req.body)
-	var text = 'Hello world from ' + req.body.name;
+	var text = 'Hello world from ' + req.body.user_name;
 	var mailOptions = {
 		from: FROM_GMAIL_USER,
 		to: TO_GMAIL_USER,
@@ -37,6 +41,8 @@ function handleSayHello (req, res) {
 			res.json({yo: 'error'})
 		} else {
 			console.log('Message sent: ' + info.response);
+			// TO DO: stop page from reloading
+			//  - could resolve with replace state and anchors later
 			res.json({yo: info.response})
 		}
 	})
