@@ -6,6 +6,10 @@
 	left: -1%;
 }
 
+h1 {
+	color: #F06543;
+}
+
 .projects {
 	width: 100%;
 	display: inline-block;
@@ -15,6 +19,8 @@
 .title {
 	background-image: url('https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/12191245_10204888988855012_6857313823967303381_o.jpg');
 	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .title > h1 {
@@ -55,6 +61,10 @@
 /* ****** LARGER THAN IPHONE ****** */
 
 @media only screen and (min-device-width: 668px) {
+
+	.title > h1 {
+		font-size: 10em;
+	}
 
 	.content-text {
 		font-size: 20px;
@@ -119,8 +129,20 @@
 		padding-bottom: 10%;
 	}
 
+	.title > h1 {
+		font-size: 10em;
+	}
+
 	.content-text {
-		font-size: 40px;
+		font-size: 2.5em;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h4 {
+		font-size: .75em;
 	}
 
 	.title, .welcome, .skills, .projects, .projects > .gps, .projects > .austin-art, .projects > .overlord {
