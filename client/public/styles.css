@@ -1,7 +1,14 @@
-.title, .welcome, .skills, .projects, .personal, .contact 
+.title, .welcome, .skills, .personal, .contact 
 {
 	height: 100vh;
 	width: 100%;
+	display: inline-block;
+	left: -1%;
+}
+
+.projects {
+	width: 100%;
+	display: inline-block;
 	left: -1%;
 }
 
@@ -40,7 +47,7 @@
 	background-image: url(https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/10915040_10203552336279533_3480927773528959396_o.jpg);
 }
 
-.gps > a > img {
+.gps > a > img, .austin-art > a > img, .overlord > a > img {
 		border: 6px solid #222222;
 		border-radius: 10px;
 }
@@ -59,12 +66,12 @@
 		flex-wrap: wrap;
 	}
 
-	.welcome > .content-text, .gps > .content-text {
+	.welcome > .content-text, .gps > .content-text, .austin-art > .content-text, .overlord > .content-text {
 		flex-basis: 30em;
 		order: 1;
 	}
 
-	.welcome > img, .gps > a {
+	.welcome > img, .gps > a, .austin-art > a, .overlord > a {
 		flex-basis: 30em;
 		order: 2;
 		width: 40%;
@@ -79,7 +86,7 @@
 		order: 1;
 	}
 
-	.projects > .gps {
+	.projects > .gps, .projects > .austin-art, .projects > .overlord {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -97,6 +104,7 @@
 }
 
 @media only screen and (max-device-width: 667px) {
+
 	h1 {
 		color: red
 	}
