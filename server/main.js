@@ -39,7 +39,7 @@ function handleSayHello (req, res) {
 			console.log('Message sent: ' + info.response);
 			// TO DO: stop page from reloading
 			//  - could resolve with replace state and anchors later
-			res.json({yo: info.response})
+			res.json({yo: info.response});
 		}
 	})
 }
