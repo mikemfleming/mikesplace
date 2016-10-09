@@ -21,7 +21,6 @@ class App extends Component {
 					<Welcome />
 					<Skills />
 					<Projects />
-					<Personal />
 					<Contact />
 				</div>
 			)
