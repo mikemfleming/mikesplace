@@ -42,11 +42,11 @@ h1 {
 }
 
 .personal {
-	background-color: #222222;	
+	background-color: #95A3B3;	
 }
 
 .contact {
-	background-color: #95A3B3;	
+	background-color: #222222;	
 }
 
 .welcome > img {
@@ -56,6 +56,14 @@ h1 {
 .gps > a > img, .austin-art > a > img, .overlord > a > img, .click-party > a > img {
 		border: 6px solid #222222;
 		border-radius: 10px;
+}
+
+.click-party > a > img {
+	height
+}
+
+p > a {
+	color: #F06543;
 }
 
 /* ****** LARGER THAN IPHONE ****** */

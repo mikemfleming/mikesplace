@@ -7,9 +7,14 @@ const Welcome = () => {
 	  	<p>I am a Software Engineer 
 	  	with BA in Media Production from The Evergreen State 
 	  	College.</p>
+	  	<p>I currently work at <a href="http://www.hackreactor.com/">
+	  	Hack Reactor</a> as a Teaching Fellow and Software Engineer as 
+	  	well as with <a href="http://www.helloworldstudio.org/"> Hello 
+	  	World Studio</a>, where I teach elementary school students 
+	  	the fundamentals of web design in HTML, CSS, and Javascript.</p>
 	  	<p>I have experience developing on the front 
 	  	and back end using technologies like React, Angular, 
-	  	Backbone, Mithril, jQuery, MaterialUI, Node.js, Express,
+	  	Backbone, Mithril, jQuery, Node.js, Express,
 		and PostgreSQL.</p>
 		<p>I am passionate about learning new 
 		technologies and always looking for opportunities to 
