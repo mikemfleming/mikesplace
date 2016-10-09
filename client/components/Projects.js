@@ -43,6 +43,18 @@ const Projects = () => {
 	    	</a>
 	    </div>
 
+	    <div className="click-party">
+	    	<div className="content-text">
+		    	<h1>Click Party</h1>
+		    	<h4>Randomly generate hex colors and their opposites</h4>
+		    	<p>Architected server file in Node.js and Express to handle GET requests for sourcesArchitected server file in Node.js and Express to handle GET requests for sources</p>
+		    	<p>Deployed to Heroku using Grunt to minify existing JavaScript and CSS filesDeployed to Heroku using Grunt to minify existing JavaScript and CSS files</p>
+	    	</div>
+	    	<a href="http://click-party.herokuapp.com/">
+	    		<img src="assets/Screen Shot 2016-10-09 at 10.45.30 AM.png" alt="click-party" />
+	    	</a>
+	    </div>
+
 	  </div>
 	)
 }
