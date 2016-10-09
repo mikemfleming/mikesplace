@@ -11,15 +11,16 @@ const Contact = () => {
 	        </div>
 	        <div>
 	            <label htmlFor="mail">E-mail:</label>
-	            <input type="email" id="mail" name="user_mail" />
+	            <input type="email" id="mail" name="user_email" />
 	        </div>
 	        <div>
 	            <label htmlFor="msg">Message:</label>
 	            <textarea id="msg" name="user_message"></textarea>
 	        </div>
+	        
 	        <div className="button">
-              <button type="submit">Send your message</button>
-          </div>
+	            <button type="submit">Send your message</button>
+	        </div>
 	    </form>
 	  </div>
 	)

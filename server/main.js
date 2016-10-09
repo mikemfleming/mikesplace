@@ -10,7 +10,7 @@ var FROM_GMAIL_USER = process.env.FROM_GMAIL_USER
 var FROM_GMAIL_PASS = process.env.FROM_GMAIL_PASS
 var TO_GMAIL_USER   = process.env.TO_GMAIL_USER
 
-app.use(bodyparser.json())
+app.use(bodyparser.urlencoded())
 app.use('/sayHello', router);
 router.post('/', handleSayHello);
 
@@ -18,34 +18,34 @@ function handleSayHello (req, res) {
 
 	// TO DO:
 	// - where is my body???
-	// - 'hellow world from undefined'
+	// - 'hello world from undefined'
 	console.log(req.body)
-	var text = 'Hello world from ' + req.body.user_name;
-	var mailOptions = {
-		from: FROM_GMAIL_USER,
-		to: TO_GMAIL_USER,
-		subject: 'Email Example',
-		text: text
-	}
-	var transporter = nodemailer.createTransport({
-		service: 'Gmail',
-		auth: {
-			user: FROM_GMAIL_USER,
-			pass: FROM_GMAIL_PASS
-		}
-	});
+	// var text = 'Hello world from ' + req.body;
+	// var mailOptions = {
+	// 	from: FROM_GMAIL_USER,
+	// 	to: TO_GMAIL_USER,
+	// 	subject: 'Email Example',
+	// 	text: text
+	// }
+	// var transporter = nodemailer.createTransport({
+	// 	service: 'Gmail',
+	// 	auth: {
+	// 		user: FROM_GMAIL_USER,
+	// 		pass: FROM_GMAIL_PASS
+	// 	}
+	// });
 
-	transporter.sendMail(mailOptions, function(error, info){
-		if (error) {
-			console.log(error)
-			res.json({yo: 'error'})
-		} else {
-			console.log('Message sent: ' + info.response);
-			// TO DO: stop page from reloading
-			//  - could resolve with replace state and anchors later
-			res.json({yo: info.response})
-		}
-	})
+	// transporter.sendMail(mailOptions, function(error, info){
+	// 	if (error) {
+	// 		console.log(error)
+	// 		res.json({yo: 'error'})
+	// 	} else {
+	// 		console.log('Message sent: ' + info.response);
+	// 		// TO DO: stop page from reloading
+	// 		//  - could resolve with replace state and anchors later
+	// 		res.json({yo: info.response})
+	// 	}
+	// })
 }
 
 var assetFolder = path.join(__dirname + '/../client/public')

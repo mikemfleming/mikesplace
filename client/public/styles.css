@@ -49,6 +49,7 @@ h1 {
 	background-color: #222222;	
 }
 
+/*TO DO: img moves up when devtools is open*/
 .welcome > img {
 	background-image: url(https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/10915040_10203552336279533_3480927773528959396_o.jpg);
 }
