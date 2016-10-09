@@ -2,6 +2,45 @@ var express = require('express');
 var browserify = require('browserify-middleware');
 var app = express();
 var path = require('path');
+var nodemailer = require('nodemailer');
+var bodyparser = require('body-parser');
+var router = express.Router();
+
+var FROM_GMAIL_USER = process.env.FROM_GMAIL_USER
+var FROM_GMAIL_PASS = process.env.FROM_GMAIL_PASS
+var TO_GMAIL_USER   = process.env.TO_GMAIL_USER
+
+app.use(bodyparser.json())
+app.use('/sayHello', router);
+router.post('/', handleSayHello);
+
+function handleSayHello (req, res) {
+	console.log(req.body)
+	var text = 'Hello world from ' + req.body.name;
+	var mailOptions = {
+		from: FROM_GMAIL_USER,
+		to: TO_GMAIL_USER,
+		subject: 'Email Example',
+		text: text
+	}
+	var transporter = nodemailer.createTransport({
+		service: 'Gmail',
+		auth: {
+			user: FROM_GMAIL_USER,
+			pass: FROM_GMAIL_PASS
+		}
+	});
+
+	transporter.sendMail(mailOptions, function(error, info){
+		if (error) {
+			console.log(error)
+			res.json({yo: 'error'})
+		} else {
+			console.log('Message sent: ' + info.response);
+			res.json({yo: info.response})
+		}
+	})
+}
 
 var assetFolder = path.join(__dirname + '/../client/public')
 app.use(express.static(assetFolder));
