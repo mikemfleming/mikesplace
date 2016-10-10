@@ -3,6 +3,12 @@ import React, { Component } from 'react';
 class Contact extends Component {
 	constructor(){
 		super()
+
+		this.state = {
+			user_name: '',
+			user_email: '',
+			user_message: ''
+		}
 	}
 
 	render(){
@@ -11,25 +17,55 @@ class Contact extends Component {
 		    CONTACT
 		    <form action="/sayHello" method="post">
 		        <div>
-		            <label htmlFor="name">Name:</label>
-		            <input type="text" id="name" name="user_name" />
+		            <label 	htmlFor="name">Name:</label>
+		            <input 	type="text" 
+		            				id="name" 
+		            				name="user_name" 
+		            				onChange={event => this.onUsernameChange(event.target.value)} />
 		        </div>
 		        <div>
-		            <label htmlFor="mail">E-mail:</label>
-		            <input type="email" id="mail" name="user_email" />
+		            <label  htmlFor="mail">E-mail:</label>
+		            <input  type="email" 
+		            				id="mail" 
+		            				name="user_email"
+		            				onChange={event => this.onEmailChange(event.target.value)} />
 		        </div>
 		        <div>
-		            <label htmlFor="msg">Message:</label>
-		            <textarea id="msg" name="user_message"></textarea>
+		            <label  htmlFor="msg">Message:</label>
+		            <textarea 
+		            				id="msg" 
+		            				name="user_message"
+		            				onChange={event => this.onMessageChange(event.target.value)}></textarea>
 		        </div>
 		        
 		        <div className="button">
-		            <button type="submit">Send Your Message</button>
+		            <button type="button" 
+		            				onClick={() => this.handleFormSubmit() }>Send Your Message</button>
 		        </div>
 		    </form>
 		  </div>
 		)
 	}
+
+	onUsernameChange (user_name) {
+		this.setState({user_name})
+		console.log(this.state.user_name)
+	}
+
+	onEmailChange (user_email) {
+		this.setState({user_email})
+		console.log(this.state.user_email)
+	}
+
+	onMessageChange (user_message) {
+		this.setState({user_message})
+		console.log(this.state.user_message)
+	}
+
+	handleFormSubmit () {
+		console.log(this.state)
+	}
+
 }
 
 export default Contact;
