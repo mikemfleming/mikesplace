@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Contact extends Component {
-	constructor(){
+	constructor(props){
 		super()
 
 		this.state = {
@@ -40,7 +40,7 @@ class Contact extends Component {
 		        
 		        <div className="button">
 		            <button type="button" 
-		            				onClick={() => this.handleFormSubmit() }>Send Your Message</button>
+		            				onClick={() => this.props.handleSubmit(this.state) }>Send Your Message</button>
 		        </div>
 		    </form>
 		  </div>
@@ -49,21 +49,14 @@ class Contact extends Component {
 
 	onUsernameChange (user_name) {
 		this.setState({user_name})
-		console.log(this.state.user_name)
 	}
 
 	onEmailChange (user_email) {
 		this.setState({user_email})
-		console.log(this.state.user_email)
 	}
 
 	onMessageChange (user_message) {
 		this.setState({user_message})
-		console.log(this.state.user_message)
-	}
-
-	handleFormSubmit () {
-		console.log(this.state)
 	}
 
 }

@@ -9,21 +9,26 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 class App extends Component {
-		constructor(){
-			super()
-		}
+	constructor(){
+		super()
+	}
 
-		render(){
-			return (
-				<div>
-					<Title />
-					<Welcome />
-					<Skills />
-					<Projects />
-					<Contact />
-				</div>
-			)
-		}
+	render(){
+		return (
+			<div>
+				<Title />
+				<Welcome />
+				<Skills />
+				<Projects />
+				<Contact handleSubmit={this.handleFormSubmit} />
+			</div>
+		)
+	}
+
+	handleFormSubmit ({ user_name, user_email, user_message }) {
+		console.log('user_name', user_name, 'user_email', user_email, 'user_message', user_message)
+	}
+
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
