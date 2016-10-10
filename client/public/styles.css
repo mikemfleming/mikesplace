@@ -1,8 +1,13 @@
-.title, .welcome, .skills, .personal, .contact 
+.title, .skills, .personal, .contact 
 {
 	height: 100vh;
 	width: 100%;
-	display: inline-block;
+	left: -1%;
+}
+
+.welcome {
+	width: 100%;
+	min-height: 100vh;
 	left: -1%;
 }
 
@@ -17,7 +22,6 @@ h1 {
 
 .projects {
 	width: 100%;
-	display: inline-block;
 	left: -1%;
 }
 
@@ -55,17 +59,13 @@ h1 {
 }
 
 /*TO DO: img moves up when devtools is open*/
-.welcome > img {
+/*.welcome > img {
 	background-image: url(https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/10915040_10203552336279533_3480927773528959396_o.jpg);
-}
+}*/
 
 .gps > a > img, .austin-art > a > img, .overlord > a > img, .click-party > a > img {
 		border: 6px solid #222222;
 		border-radius: 10px;
-}
-
-.click-party > a > img {
-	height
 }
 
 p > a {

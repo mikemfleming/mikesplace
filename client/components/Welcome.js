@@ -20,7 +20,7 @@ const Welcome = () => {
 		technologies and always looking for opportunities to 
 		expand and hone my skills.</p>
 	  </div>
-	  	<img src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/1474525_10200906544696397_1862895543_n.jpg?oh=c2490d950bb8976e7e43091d378e2da6&oe=58AD3628" />
+	  <img src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/1474525_10200906544696397_1862895543_n.jpg?oh=c2490d950bb8976e7e43091d378e2da6&oe=58AD3628" />
 	  </div>
 	)
 }
