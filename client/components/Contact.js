@@ -14,24 +14,23 @@ class Contact extends Component {
 	render(){
 		return (
 		  <div className="contact">
-		    CONTACT
-		    <form>
+		    <div className="message">
 		        <div>
-		            <label 	htmlFor="name">Name:</label>
+		            <label 	htmlFor="name">Name: </label>
 		            <input 	type="text" 
 		            				id="name" 
 		            				name="user_name" 
 		            				onChange={event => this.onUsernameChange(event.target.value)} />
 		        </div>
 		        <div>
-		            <label  htmlFor="mail">E-mail:</label>
+		            <label  htmlFor="mail">E-mail: </label>
 		            <input  type="email" 
 		            				id="mail" 
 		            				name="user_email"
 		            				onChange={event => this.onEmailChange(event.target.value)} />
 		        </div>
 		        <div>
-		            <label  htmlFor="msg">Message:</label>
+		            <label  htmlFor="msg">Message: </label>
 		            <textarea 
 		            				id="msg" 
 		            				name="user_message"
@@ -42,7 +41,7 @@ class Contact extends Component {
 		            <button type="button" 
 		            				onClick={() => this.props.handleSubmit(this.state) }>Send Your Message</button>
 		        </div>
-		    </form>
+		    </div>
 		  </div>
 		)
 	}
