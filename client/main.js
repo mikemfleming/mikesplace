@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
+import 'whatwg-fetch';
 
 import Title from './components/Title';
 import Welcome from './components/Welcome';
@@ -27,6 +28,14 @@ class App extends Component {
 
 	handleFormSubmit ({ user_name, user_email, user_message }) {
 		console.log('user_name', user_name, 'user_email', user_email, 'user_message', user_message)
+		fetch('/sayHello', {
+			method: 'POST',
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({ user_name, user_email, user_message})
+		})
 	}
 
 }

@@ -10,12 +10,11 @@ var FROM_GMAIL_USER = process.env.FROM_GMAIL_USER
 var FROM_GMAIL_PASS = process.env.FROM_GMAIL_PASS
 var TO_GMAIL_USER   = process.env.TO_GMAIL_USER
 
-app.use(bodyparser.urlencoded({extended: true}))
+app.use(bodyparser.json())
 app.use('/sayHello', router);
 router.post('/', handleSayHello);
 
 function handleSayHello (req, res) {
-
 	var text = 'user_message: ' + req.body.user_message + '\n\nuser_email: ' + req.body.user_email;
 	var mailOptions = {
 		from: FROM_GMAIL_USER,

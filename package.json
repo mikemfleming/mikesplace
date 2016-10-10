@@ -15,7 +15,8 @@
     "nodemon": "^1.10.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-scroll": "^1.4.0"
+    "react-scroll": "^1.4.0",
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
