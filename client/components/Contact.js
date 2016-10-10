@@ -15,7 +15,7 @@ class Contact extends Component {
 		return (
 		  <div className="contact">
 		    CONTACT
-		    <form action="/sayHello" method="post">
+		    <form>
 		        <div>
 		            <label 	htmlFor="name">Name:</label>
 		            <input 	type="text" 

@@ -26,8 +26,8 @@ class App extends Component {
 		)
 	}
 
+	// TODO: add email verification, protection from deadly hackers, hide form after success 
 	handleFormSubmit ({ user_name, user_email, user_message }) {
-		console.log('user_name', user_name, 'user_email', user_email, 'user_message', user_message)
 		fetch('/sayHello', {
 			method: 'POST',
 			headers: {
