@@ -42,6 +42,13 @@ class Contact extends Component {
 		            				onClick={() => this.props.handleSubmit(this.state) }>Send Your Message</button>
 		        </div>
 		    </div>
+	      	<div className="social-media">
+	      		<ul>
+	    	  		<a href="">GITHUB</a>
+	    	  		<a href="">LINKED IN</a>
+	    	  		<a href="">ANGEL LIST</a>
+	      		</ul>
+	      	</div>
 		  </div>
 		)
 	}

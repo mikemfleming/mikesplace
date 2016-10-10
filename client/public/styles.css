@@ -176,7 +176,7 @@ button {
 		width: 100%;
 	}
 
-	.welcome > .content-text {
+	.social-media, .welcome > .content-text {
 		flex-basis: 30em;
 		order: 1;
 	}
