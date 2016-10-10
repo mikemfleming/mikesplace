@@ -169,7 +169,7 @@ button {
 	.welcome > img, .gps > a, .austin-art > a, .overlord > a, .click-party > a {
 		flex-basis: 30em;
 		order: 2;
-		width: 40%;
+		width: 18em;
 	}
 
 	a > img {
