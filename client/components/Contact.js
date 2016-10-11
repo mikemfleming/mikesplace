@@ -43,11 +43,15 @@ class Contact extends Component {
 		        </div>
 		    </div>
 	      	<div className="social-media">
-	      		<ul>
-	    	  		<a href="">GITHUB</a>
-	    	  		<a href="">LINKED IN</a>
-	    	  		<a href="">ANGEL LIST</a>
-	      		</ul>
+	      		<a href="https://www.linkedin.com/in/mikemfleming">
+			  		<img src="assets/linkedin-icon copy.png" />
+	      		</a>
+	      		<a href="https://github.com/mikemfleming">
+			  		<img src="assets/download copy.png" />
+	      		</a>
+	      		<a href="https://angel.co/mikemfleming">
+		  			<img src="assets/peace_large copy.png"  />
+	      		</a>
 	      	</div>
 		  </div>
 		)

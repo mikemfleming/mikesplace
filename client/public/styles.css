@@ -1,26 +1,12 @@
+/*********************************/
+/* ****** GENERAL STYLING ****** */
+/*********************************/
+
+/*SECTIONS*/
+
 .title, .skills, .personal, .contact 
 {
 	height: 100vh;
-	width: 100%;
-	left: -1%;
-}
-
-.welcome {
-	width: 100%;
-	min-height: 100vh;
-	left: -1%;
-}
-
-h1 {
-	color: #F06543;
-	text-shadow:
-	    -1px -1px 0 #222222,
-	    1px -1px 0 #222222,
-	    -1px 1px 0 #222222,
-	    1px 1px 0 #222222; 
-}
-
-.projects {
 	width: 100%;
 	left: -1%;
 }
@@ -32,9 +18,10 @@ h1 {
 	background-attachment: fixed;
 }
 
-.title > h1 {
-	margin: auto;
-	text-align: center;
+.welcome {
+	width: 100%;
+	min-height: 100vh;
+	left: -1%;
 }
 
 .welcome {
@@ -47,21 +34,32 @@ h1 {
 }
 
 .projects {
-	background-color: #FCFCFC;	
+	width: 100%;
+	left: -1%;
 }
 
-.personal {
-	background-color: #95A3B3;	
+.projects {
+	background-color: #FCFCFC;	
 }
 
 .contact {
 	background-color: #222222;
 }
 
-/*TO DO: img moves up when devtools is open*/
-/*.welcome > img {
-	background-image: url(https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/10915040_10203552336279533_3480927773528959396_o.jpg);
-}*/
+/*ELEMENTS*/
+.title > h1 {
+	margin: auto;
+	text-align: center;
+}
+
+h1 {
+	color: #F06543;
+	text-shadow:
+	    -1px -1px 0 #222222,
+	    1px -1px 0 #222222,
+	    -1px 1px 0 #222222,
+	    1px 1px 0 #222222; 
+}
 
 .gps > a > img, .austin-art > a > img, .overlord > a > img, .click-party > a > img {
 		border: 6px solid #222222;
@@ -75,19 +73,15 @@ p > a {
 /* ****** FORM STYLING ****** */
 
 .message {
-    /* Just to center the .message on the page */
-    /* To see the outline of the .message */
     width: 40%;
     padding: 1em;
-/*    border: 1px solid #CCC;
-*/}
+}
 
 .message div + div {
     margin-top: 1em;
 }
 
 label {
-    /* To make sure that all labels have the same size and are properly aligned */
     color: #FCFCFC;
     display: inline-block;
     width: 100%;
@@ -95,45 +89,26 @@ label {
 }
 
 input, textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
     font: 1.2em sans-serif;
-
-    /* To give the same size to all text field */
     width: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
-    /* To harmonize the look & feel of text field border */
     border: 1px solid #999;
     color: white;
     background-color: rgba(0,0,0,.2);
 }
 
 input:focus, textarea:focus {
-    /* To give a little highlight on active elements */
     border-color: #000;
 }
 
 textarea {
-    /* To properly align multiline text fields with their labels */
     vertical-align: top;
-
-    /* To give enough room to type some text */
     height: 5em;
-
-    /* To allow users to resize any textarea vertically
-       It does not work on all browsers */
     resize: vertical;
 }
 
-.button {
-    /* To position the buttons to the same position of the text fields */
-    /*padding-left: 90px;*/ /* same size as the label elements */
-}
 button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
     color: white;
     background-color: rgba(0,0,0,.2);
     margin-left: .5em;
@@ -179,6 +154,17 @@ button {
 	.social-media, .welcome > .content-text {
 		flex-basis: 30em;
 		order: 1;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.social-media > a > img {
+		padding-top: 4%;
+		padding-bottom: 4%;
+		width: 50%;
 	}
 
 	.projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party {
