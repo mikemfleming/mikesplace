@@ -48,8 +48,12 @@ class Contact extends Component {
 			// hack protection
 			body: JSON.stringify({ user_name, user_email, user_message})
 		}).then(({status}) => { 
-			console.log('~~~~~~~~~~~status', status)
-			console.log(this.setState({ showMessage: false }))
+			if (status != 200) {
+				// if error, prompt user to try again
+			} else {
+				// hide message, show success
+				this.setState({ showMessage: false })
+			}
 		})
 		// on success
 	}
