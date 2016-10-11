@@ -11,6 +11,10 @@ import Contact from './components/Contact';
 class App extends Component {
 	constructor(){
 		super()
+
+		this.state = {
+			showMessage: true
+		}
 	}
 
 	render(){
@@ -20,7 +24,7 @@ class App extends Component {
 				<Welcome />
 				<Skills />
 				<Projects />
-				<Contact handleSubmit={this.handleFormSubmit} />
+				<Contact handleSubmit={this.handleFormSubmit.bind(this)} />
 			</div>
 		)
 	}
@@ -28,6 +32,7 @@ class App extends Component {
 	// TODO: add email verification, protection from deadly hackers, hide form after success 
 	handleFormSubmit ({ user_name, user_email, user_message }) {
 		// email verification
+
 		fetch('/sayHello', {
 			method: 'POST',
 			headers: {
@@ -36,6 +41,9 @@ class App extends Component {
 			},
 			// hack protection
 			body: JSON.stringify({ user_name, user_email, user_message})
+		}).then(({status}) => { 
+			console.log('~~~~~~~~~~~status', status)
+			console.log(this.state)
 		})
 		// on success
 	}
