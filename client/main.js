@@ -4,7 +4,6 @@ import 'whatwg-fetch';
 
 import Title from './components/Title';
 import Welcome from './components/Welcome';
-import Personal from './components/personal';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
