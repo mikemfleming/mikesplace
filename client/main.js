@@ -28,14 +28,17 @@ class App extends Component {
 
 	// TODO: add email verification, protection from deadly hackers, hide form after success 
 	handleFormSubmit ({ user_name, user_email, user_message }) {
+		// email verification
 		fetch('/sayHello', {
 			method: 'POST',
 			headers: {
 				'Accept': 'application/json',
 				'Content-Type': 'application/json'
 			},
+			// hack protection
 			body: JSON.stringify({ user_name, user_email, user_message})
 		})
+		// on success
 	}
 
 }

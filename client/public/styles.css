@@ -138,7 +138,7 @@ button {
 	.message, .welcome > .content-text, .gps > .content-text, .austin-art > .content-text, .overlord > .content-text, .click-party > .content-text 
 	{
 		flex-basis: 30em;
-		order: 2;
+		order: 1;
 	}
 
 	.welcome > img, .gps > a, .austin-art > a, .overlord > a, .click-party > a {
@@ -153,7 +153,7 @@ button {
 
 	.social-media, .welcome > .content-text {
 		flex-basis: 30em;
-		order: 1;
+		order: 2;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;

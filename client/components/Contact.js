@@ -42,6 +42,7 @@ class Contact extends Component {
 		            				onClick={() => this.props.handleSubmit(this.state) }>Send Your Message</button>
 		        </div>
 		    </div>
+		    
 	      	<div className="social-media">
 	      		<a href="https://www.linkedin.com/in/mikemfleming">
 			  		<img src="assets/linkedin-icon copy.png" />
