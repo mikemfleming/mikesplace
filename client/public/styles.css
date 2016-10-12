@@ -47,13 +47,13 @@
 }
 
 /*ELEMENTS*/
+h1 {
+	color: #F06543;
+}
+
 .title > h1 {
 	margin: auto;
 	text-align: center;
-}
-
-h1 {
-	color: #F06543;
 	text-shadow:
 	    -1px -1px 0 #222222,
 	    1px -1px 0 #222222,
