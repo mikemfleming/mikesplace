@@ -119,14 +119,6 @@ button {
 
 @media only screen and (min-device-width: 668px) {
 
-	.title > h1 {
-		font-size: 10em;
-	}
-
-	.content-text {
-		font-size: 20px;
-	}
-
 	.title, .welcome, .skills, .projects, .contact {
 		display: flex;
 		flex-direction: row;
@@ -134,11 +126,45 @@ button {
 		align-items: center;
 		flex-wrap: wrap;
 	}
+	
+	.projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		order: 1;
+	}
 
+	.social-media, .welcome > .content-text {
+		flex-basis: 30em;
+		order: 2;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	.content-text {
+		font-size: 20px;
+	}
+	
 	.message, .welcome > .content-text, .gps > .content-text, .austin-art > .content-text, .overlord > .content-text, .click-party > .content-text 
 	{
 		flex-basis: 30em;
 		order: 1;
+	}
+	
+
+	.skills > .content-text {
+		flex-basis: 30em;
+		order: 1;
+	}
+	
+	.title > h1 {
+		font-size: 10em;
 	}
 
 	.welcome > img, .gps > a, .austin-art > a, .overlord > a, .click-party > a {
@@ -151,35 +177,10 @@ button {
 		width: 100%;
 	}
 
-	.social-media, .welcome > .content-text {
-		flex-basis: 30em;
-		order: 2;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		flex-wrap: wrap;
-	}
-
 	.social-media > a > img {
 		padding-top: 4%;
 		padding-bottom: 4%;
 		width: 50%;
-	}
-
-	.projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		flex-wrap: wrap;
-		order: 1;
-	}
-
-	.skills > .content-text {
-		flex-basis: 30em;
-		order: 1;
 	}
 
 	.gps > a, .austin-art > a, .overlord > a, .click-party > a {
@@ -193,6 +194,31 @@ button {
 
 @media only screen and (max-device-width: 667px) {
 
+	.title, .welcome, .skills, .projects, .projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party 
+	{
+		display: flex;
+		flex-direction: column;
+		flex-flow: wrap;
+		justify-content: space-around;
+	}
+	
+	.welcome > .content-text, .gps > .content-text, .austin-art > .content-text, .overlord > .content-text, .click-party > .content-text 
+	{
+		width: 60%;
+		order: 1;
+		margin: auto;
+	}
+	
+	.content-text {
+		font-size: 2.5em;
+	}
+	
+	.skills > .content-text {
+		width: 60%;
+		order: 1;
+		margin: auto;
+	}
+	
 	.gps > a, .austin-art > a, .overlord > a, .click-party > a {
 		padding-top: 10%;
 		padding-bottom: 10%;
@@ -202,10 +228,6 @@ button {
 		font-size: 10em;
 	}
 
-	.content-text {
-		font-size: 2.5em;
-	}
-
 	h1 {
 		font-size: 2em;
 	}
@@ -213,22 +235,7 @@ button {
 	h4 {
 		font-size: .75em;
 	}
-
-	.title, .welcome, .skills, .projects, .projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party 
-	{
-		display: flex;
-		flex-direction: column;
-		flex-flow: wrap;
-		justify-content: space-around;
-	}
-
-	.welcome > .content-text, .gps > .content-text, .austin-art > .content-text, .overlord > .content-text, .click-party > .content-text 
-	{
-		width: 60%;
-		order: 1;
-		margin: auto;
-	}
-
+	
 	.welcome > img, .gps > a, .austin-art > a, .overlord > a, .click-party > a {
 		width: 60%;
 		order: 2;
@@ -239,10 +246,5 @@ button {
 		width: 100%;
 	}
 
-	.skills > .content-text {
-		width: 60%;
-		order: 1;
-		margin: auto;
-	}
 }
 
