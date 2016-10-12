@@ -8,7 +8,8 @@ class Contact extends Component {
 		super()
 
 		this.state = {
-			showMessage: true
+			showMessage: true,
+			userRetry: false
 		}
 	}
 
@@ -18,7 +19,7 @@ class Contact extends Component {
 		    
 		    { this.state.showMessage ? 
 		    	<Message handleSubmit={this.handleSubmit.bind(this)} /> :
-		    	<div>nice work!</div> }
+		    	<h1>nice work!</h1> }
 		  	
 	      	<div className="social-media">
 	      		<a href="https://www.linkedin.com/in/mikemfleming">
@@ -35,9 +36,8 @@ class Contact extends Component {
 		)
 	}
 
-	// TODO: add email verification, protection from deadly hackers, hide form after success 
+	// TODO: add email verification in message.js, protection from deadly hackers in here
 	handleSubmit ({ user_name, user_email, user_message }) {
-		// email verification
 
 		fetch('/sayHello', {
 			method: 'POST',

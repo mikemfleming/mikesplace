@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import validator, { validate } from 'email-validator';
 
 class Message extends Component {
 	constructor (props) {
@@ -7,11 +8,28 @@ class Message extends Component {
 		this.state = {
 			user_name: '',
 			user_email: '',
-			user_message: ''
+			user_message: '',
+			validEntry: true,
+			spinner: false
 		}
 	}
 
 	render(){
+
+		const errorStyle = {
+			color: 'red',
+			'paddingLeft': '5%'
+		}
+
+		const error = <span style={errorStyle}>invalid message... try again!</span>
+
+		const spinnerStyle = {
+			height: '25px',
+			paddingLeft: '5%'
+		}
+
+		const spinner = <img style ={spinnerStyle} src="assets/spinner (1).GIF" />
+
 		return (
 		  <div className="message">
 		      <div>
@@ -22,14 +40,14 @@ class Message extends Component {
 		          				onChange={event => this.onUsernameChange(event.target.value)} />
 		      </div>
 		      <div>
-		          <label  htmlFor="mail">E-mail: </label>
+		          <label  htmlFor="mail">E-mail:  </label>
 		          <input  type="email" 
 		          				id="mail" 
 		          				name="user_email"
 		          				onChange={event => this.onEmailChange(event.target.value)} />
 		      </div>
 		      <div>
-		          <label  htmlFor="msg">Message: </label>
+		          <label  htmlFor="msg">Message:  </label>
 		          <textarea 
 		          				id="msg" 
 		          				name="user_message"
@@ -38,7 +56,10 @@ class Message extends Component {
 		      
 		      <div className="button">
 		          <button type="button" 
-		          				onClick={() => this.props.handleSubmit(this.state) }>Send Your Message</button>
+		          				onClick={() => this.validateAndSubmit(this.state) }>Send Your Message</button>
+
+		          { this.state.validEntry ? null : error }
+		          { !this.state.spinner ?   null : spinner }
 		      </div>
 		  </div>
 		)
@@ -55,7 +76,17 @@ class Message extends Component {
 	onMessageChange (user_message) {
 		this.setState({user_message})
 	}
-	
+
+	validateAndSubmit ({user_name, user_email, user_message}) {
+		if (user_name !== '' && user_message !== '' && validate(user_email)) {
+			this.setState({ validEntry: true })
+			this.setState({ spinner: true })
+			this.props.handleSubmit(this.state)
+		} else {
+			this.setState({ validEntry: false })
+			console.log('invalid entry')
+		}
+	}
 }
 
 export default Message;
