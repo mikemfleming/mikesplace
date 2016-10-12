@@ -31,6 +31,19 @@
 
 .skills {
 	background-color: #F06543;	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.skills > .content-text {
+	flex-basis: 30em;
+	order: 1;
+}
+
+.skills-gallery {
+	order: 2;
 }
 
 .projects {
@@ -51,6 +64,10 @@ h1 {
 	color: #F06543;
 }
 
+.skills > .content-text {
+	text-align: center;
+}
+
 .title > h1 {
 	margin: auto;
 	text-align: center;
@@ -59,6 +76,10 @@ h1 {
 	    1px -1px 0 #222222,
 	    -1px 1px 0 #222222,
 	    1px 1px 0 #222222; 
+}
+
+.skills > .content-text > h1 {
+	color: #FCFCFC;
 }
 
 .gps > a > img, .austin-art > a > img, .overlord > a > img, .click-party > a > img {
@@ -119,7 +140,7 @@ button {
 
 @media only screen and (min-device-width: 668px) {
 
-	.title, .welcome, .skills, .projects, .contact {
+	.title, .welcome, .projects, .contact {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
@@ -146,6 +167,21 @@ button {
 		align-items: center;
 		flex-wrap: wrap;
 	}
+
+	/*.skills {
+		flex-basis: 30em;
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}*/
+
+	.skills-gallery {
+		order: 2;
+		display: flex;
+	}
 	
 	.content-text {
 		font-size: 20px;
@@ -153,12 +189,6 @@ button {
 	
 	.message, .welcome > .content-text, .gps > .content-text, .austin-art > .content-text, .overlord > .content-text, .click-party > .content-text 
 	{
-		flex-basis: 30em;
-		order: 1;
-	}
-	
-
-	.skills > .content-text {
 		flex-basis: 30em;
 		order: 1;
 	}

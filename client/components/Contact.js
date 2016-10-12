@@ -36,7 +36,7 @@ class Contact extends Component {
 		)
 	}
 
-	// TODO: add email verification in message.js, protection from deadly hackers in here
+	// TODO: add protection from deadly hackers in here
 	handleSubmit ({ user_name, user_email, user_message }) {
 
 		fetch('/sayHello', {
@@ -55,7 +55,6 @@ class Contact extends Component {
 				this.setState({ showMessage: false })
 			}
 		})
-		// on success
 	}
 }
 
