@@ -4,7 +4,7 @@
 
 /*SECTIONS*/
 
-.title, .skills, .personal, .contact 
+.title, .personal, .contact 
 {
 	height: 100vh;
 	width: 100%;
@@ -30,16 +30,32 @@
 }
 
 .skills {
+	width: 100%;
+	left: -1%;
+	min-height: 80vh;
 	background-color: #F06543;	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: baseline;
 	flex-flow: wrap;
+
 }
 
 .skill-box > h4, .skill-box > p {
 	text-align: center;
+}
+
+.skills-box {
+	width: 50%;
+}
+
+.icon, .skills > .content-text > h1 {
+	text-shadow:
+	    -1px -1px 0 #222222,
+	    1px -1px 0 #222222,
+	    -1px 1px 0 #222222,
+	    1px 1px 0 #222222;
 }
 
 .icon {
@@ -57,12 +73,14 @@
 .skills-gallery {
 	order: 2;
 	display: flex;
-	flex-direction: row;
+	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .skill-box {
 	width: 20%;
+	flex-basis: 30em;
 }
 
 .projects {
