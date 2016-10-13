@@ -9,6 +9,7 @@ const Skills = () => {
 	    </div>
 	    <div className="skills-gallery">
 	    	<div className="skill-box">
+	    		<i className="fa fa-diamond icon" aria-hidden="true"></i>
 	    		<h4>Ideas</h4>
 	    		<p>I collaborate with clients and peers to nurture and 
 	    			transform ideas into well thought out design specs. 
@@ -17,6 +18,7 @@ const Skills = () => {
 	    		</p>
 	    	</div>
 	    	<div className="skill-box">
+	    		<i className="fa fa-magic icon" aria-hidden="true"></i>
 	    		<h4>UX/UI</h4>
 	    		<p>I sketch and wireframe interfaces focusing on content 
 	    			structure, intuitive UI patterns and simple interactions. 
@@ -24,6 +26,7 @@ const Skills = () => {
 	    		</p>
 	    	</div>
 	    	<div className="skill-box">
+	    		<i className="fa fa-code icon" aria-hidden="true"></i>
 	    		<h4>Code</h4>
 	    		<p>I design in the browser with HTML(5), CSS(3) and a touch of 
 	    			JavaScript. I love coding things from scratch, but I can 

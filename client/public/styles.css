@@ -33,8 +33,20 @@
 	background-color: #F06543;	
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: center;
+	align-items: baseline;
+	flex-flow: wrap;
+}
+
+.skill-box > h4, .skill-box > p {
+	text-align: center;
+}
+
+.icon {
+	font-size: 5em;
+	width: 100%;
+	text-align: center;
+	color: #FCFCFC;
 }
 
 .skills > .content-text {
@@ -44,6 +56,13 @@
 
 .skills-gallery {
 	order: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.skill-box {
+	width: 20%;
 }
 
 .projects {
@@ -167,16 +186,6 @@ button {
 		align-items: center;
 		flex-wrap: wrap;
 	}
-
-	/*.skills {
-		flex-basis: 30em;
-		order: 2;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		flex-wrap: wrap;
-	}*/
 
 	.skills-gallery {
 		order: 2;
