@@ -5,6 +5,7 @@ const Welcome = () => {
 	  <div className="welcome">
 
 	  <div className="content-text">
+	  	<h1>Hey there!</h1>
 	  	<p>I am a Software Engineer 
 	  	with BA in Media Production from The Evergreen State 
 	  	College.</p>
