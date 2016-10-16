@@ -8,6 +8,11 @@ h1 {
 	font-family: 'Lobster', cursive;
 }
 
+.overlord > .content-text, .gps > .content-text, .austin-art > .content-text, .click-party > .content-text
+{
+	text-align: center;
+}
+
 .title, .personal 
 {
 	height: 100vh;
