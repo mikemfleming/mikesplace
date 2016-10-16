@@ -8,7 +8,7 @@ h1 {
 	font-family: 'Lobster', cursive;
 }
 
-.title, .personal, .contact 
+.title, .personal 
 {
 	height: 100vh;
 	width: 100%;
@@ -193,6 +193,15 @@ button {
 
 @media only screen and (min-device-width: 668px) {
 
+	.contact {
+		min-height: 70vh;
+	}
+
+	.overlord > a > img, .gps > a > img, .austin-art > a > img, .click-party > a > img {
+		height: 28em;
+		width: 28em;
+	}
+
 	.title, .welcome, .projects, .contact {
 		display: flex;
 		flex-direction: row;
@@ -267,6 +276,24 @@ button {
 
 @media only screen and (max-device-width: 667px) {
 
+	.contact {
+		min-height: 20vh;
+	}
+
+	.skills-gallery {
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.skill-box {
+		width: 80%;
+		margin: 5% 0% 5% 0%;
+	}
+
+	.icon {
+		font-size: 10em;
+	}
+
 	.title, .welcome, .skills, .projects, .projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party 
 	{
 		display: flex;
@@ -289,7 +316,7 @@ button {
 	.skills > .content-text {
 		width: 60%;
 		order: 1;
-		margin: auto;
+		margin-top: 5%;
 	}
 	
 	.gps > a, .austin-art > a, .overlord > a, .click-party > a {
@@ -317,6 +344,33 @@ button {
 
 	a > img {
 		width: 100%;
+	}
+
+	.welcome > .content-text {
+		margin-top: 10%;
+	}
+
+	.welcome > .content-text > h1 {
+		margin-bottom: 10%;
+	}
+
+	.overlord > a > img, .gps > a > img, .austin-art > a > img, .click-party > a > img {
+		height: 43em;
+		width: 43em;
+	}
+
+	.message {
+		width: 80%;
+		margin-left: 7em;
+	}
+
+	.social-media > a > img {
+		width: 18%;
+		margin: 10% 5%;
+	}
+
+	.social-media {
+		text-align: center;
 	}
 
 }
