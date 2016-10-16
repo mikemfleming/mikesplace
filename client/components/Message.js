@@ -56,7 +56,10 @@ class Message extends Component {
 		      
 		      <div className="button">
 		          <button type="button" 
-		          				onClick={() => this.validateAndSubmit(this.state) }>Send Your Message</button>
+		          				onClick={() => this.validateAndSubmit(this.state) }>
+		          				<i className="fa fa-paper-plane-o" aria-hidden="true"></i>
+ 								Send Your Message
+ 					</button>
 
 		          { this.state.validEntry ? null : error }
 		          { !this.state.spinner ?   null : spinner }

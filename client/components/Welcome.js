@@ -3,6 +3,7 @@ import React from 'react';
 const Welcome = () => {
 	return (
 	  <div className="welcome">
+
 	  <div className="content-text">
 	  	<p>I am a Software Engineer 
 	  	with BA in Media Production from The Evergreen State 

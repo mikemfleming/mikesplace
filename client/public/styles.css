@@ -32,7 +32,7 @@
 .skills {
 	width: 100%;
 	left: -1%;
-	min-height: 80vh;
+	min-height: 70vh;
 	background-color: #F06543;	
 	display: flex;
 	flex-direction: column;
@@ -48,6 +48,7 @@
 
 .skills-box {
 	width: 50%;
+	margin-bottom: 5%;
 }
 
 .icon, .skills > .content-text > h1 {
@@ -65,9 +66,14 @@
 	color: #FCFCFC;
 }
 
+button > i {
+	margin-right: 10px;
+}
+
 .skills > .content-text {
 	flex-basis: 30em;
 	order: 1;
+	margin-bottom: 2em;
 }
 
 .skills-gallery {
@@ -75,7 +81,7 @@
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	justify-content: space-around;
-	align-items: center;
+	align-items: baseline;
 }
 
 .skill-box {
@@ -117,6 +123,7 @@ h1 {
 
 .skills > .content-text > h1 {
 	color: #FCFCFC;
+	font-size: 2.25em;
 }
 
 .gps > a > img, .austin-art > a > img, .overlord > a > img, .click-party > a > img {
@@ -186,7 +193,7 @@ button {
 	}
 	
 	.projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party {
-		width: 100%;
+		width: 50%;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
@@ -221,7 +228,7 @@ button {
 	}
 	
 	.title > h1 {
-		font-size: 10em;
+		font-size: 7em;
 	}
 
 	.welcome > img, .gps > a, .austin-art > a, .overlord > a, .click-party > a {
