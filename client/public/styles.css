@@ -8,6 +8,10 @@ h1 {
 	font-family: 'Lobster', cursive;
 }
 
+.cloud > h4 {
+	text-align: center;
+}
+
 .overlord > .content-text, .gps > .content-text, .austin-art > .content-text, .click-party > .content-text
 {
 	text-align: center;
@@ -19,6 +23,12 @@ h1 {
 	width: 100%;
 	left: -1%;
 }
+
+.cloud {
+	color: #FCFCFC;
+}
+
+
 
 .title {
 	background-image: url('https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/12191245_10204888988855012_6857313823967303381_o.jpg');
@@ -198,6 +208,13 @@ button {
 
 @media only screen and (min-device-width: 668px) {
 
+	.cloud > img {
+		margin-left: 25%;
+		width: 15em;
+	}
+
+
+
 	.contact {
 		min-height: 70vh;
 	}
@@ -249,7 +266,7 @@ button {
 		flex-basis: 30em;
 		order: 1;
 	}
-	
+
 	.title > h1 {
 		font-size: 7em;
 	}
@@ -280,6 +297,17 @@ button {
 /* ****** IPHONE 6 AND SMALLER ****** */
 
 @media only screen and (max-device-width: 667px) {
+
+	.cloud > img {
+		margin-left: 25%;
+		width: 30em;
+		margin-top: 15%;
+	}
+
+
+	.cloud > h4 {
+		font-size: 5em;
+	}
 
 	.contact {
 		min-height: 20vh;
@@ -366,8 +394,11 @@ button {
 
 	.message {
 		width: 80%;
-		margin-left: 7em;
-	}
+		font-size: 3em;
+		margin-left: 10%;
+		text-align: center;
+/*		margin-left: 7em;
+*/	}
 
 	.social-media > a > img {
 		width: 18%;

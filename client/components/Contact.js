@@ -19,7 +19,10 @@ class Contact extends Component {
 		    
 		    { this.state.showMessage ? 
 		    	<Message handleSubmit={this.handleSubmit.bind(this)} /> :
-		    	<img src="assets/CloudDude_0002_fcfcfc.png" /> }
+		    	<div className="cloud">
+		    		<img src="assets/CloudDude_0002_fcfcfc.png" />
+		    		<h4>Talk to you soon!</h4>
+		    	</div> }
 		  	
 	      	<div className="social-media">
 	      		<a href="https://www.linkedin.com/in/mikemfleming">
