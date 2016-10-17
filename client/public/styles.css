@@ -431,5 +431,9 @@ button {
 		background-attachment: fixed;
 	}
 
+	.skills > .content-text {
+		margin-bottom: 10%;
+	}
+
 }
 
