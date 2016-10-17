@@ -8,6 +8,11 @@ h1 {
 	font-family: 'Lobster', cursive;
 }
 
+.projects > h1 {
+	width: 100%;
+	text-align: center;
+}
+
 .cloud > h4 {
 	text-align: center;
 }
