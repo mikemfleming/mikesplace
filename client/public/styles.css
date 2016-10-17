@@ -330,6 +330,7 @@ button {
 
 	.icon {
 		font-size: 10em;
+		text-align: center;
 	}
 
 	.title, .welcome, .skills, .projects, .projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party 
