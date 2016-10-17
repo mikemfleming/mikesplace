@@ -416,5 +416,9 @@ button {
 		text-align: center;
 	}
 
+	.skill-box > p {
+		font-size: 3em;
+	}
+
 }
 
