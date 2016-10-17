@@ -9,16 +9,6 @@ const Skills = () => {
 	    </div>
 	    <div className="skills-gallery">
 	    	<div className="skill-box">
-	    		<i className="fa fa-diamond icon" aria-hidden="true"></i>
-	    		<h4>Pedagogy</h4>
-	    		<p>
-	    			I lead classes on everything from the fundamentals of
-	    			HTML and CSS with elementary school kids to more 
-	    			advanced concepts of JavaScript programming with students 
-	    			at MakerSquare. 
-	    		</p>
-	    	</div>
-	    	<div className="skill-box">
 	    		<i className="fa fa-magic icon" aria-hidden="true"></i>
 	    		<h4>UX/UI</h4>
 	    		<p>
@@ -35,6 +25,16 @@ const Skills = () => {
 	    			I build things with HTML5, CSS3 and a heavy dose of JavaScript. 
 	    			I love coding things from scratch, but I'm no stranger to inheriting 
 	    			large codebases. 
+	    		</p>
+	    	</div>
+	    	<div className="skill-box">
+	    		<i className="fa fa-diamond icon" aria-hidden="true"></i>
+	    		<h4>Pedagogy</h4>
+	    		<p>
+	    			I lead classes on everything from the fundamentals of
+	    			HTML and CSS with elementary school kids to more 
+	    			advanced concepts of JavaScript programming with students 
+	    			at MakerSquare. 
 	    		</p>
 	    	</div>
 	    </div>
