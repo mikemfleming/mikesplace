@@ -139,11 +139,11 @@ h1 {
 	color: #FCFCFC;
 	margin: auto;
 	text-align: center;
-	text-shadow:
+/*	text-shadow:
 	    -1px -1px 0 #F06543,
 	    1px -1px 0 #F06543,
 	    -1px 1px 0 #F06543,
-	    1px 1px 0 #F06543; 
+	    1px 1px 0 #F06543; */
 }
 
 .skills > .content-text > h1 {
@@ -270,6 +270,7 @@ button {
 	{
 		flex-basis: 30em;
 		order: 1;
+		text-align: center;
 	}
 
 	.title > h1 {
