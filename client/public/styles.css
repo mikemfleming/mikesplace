@@ -139,11 +139,11 @@ h1 {
 	color: #FCFCFC;
 	margin: auto;
 	text-align: center;
-/*	text-shadow:
-	    -1px -1px 0 #F06543,
-	    1px -1px 0 #F06543,
-	    -1px 1px 0 #F06543,
-	    1px 1px 0 #F06543; */
+	text-shadow:
+	    -1px -1px 0 #222222,
+	    1px -1px 0 #222222,
+	    -1px 1px 0 #222222,
+	    1px 1px 0 #222222;
 }
 
 .skills > .content-text > h1 {

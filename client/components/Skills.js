@@ -5,7 +5,7 @@ const Skills = () => {
 	  <div className="skills">
 	    <div className="content-text">
 	    	<h1>My Skills</h1>
-	    	<h4>I bring a lot to the table in any situation</h4>
+	    	<h4>I Bring A Lot To The Table In Any Situation</h4>
 	    </div>
 	    <div className="skills-gallery">
 	    	<div className="skill-box">
@@ -34,7 +34,7 @@ const Skills = () => {
 	    			I lead classes on everything from the fundamentals of
 	    			HTML and CSS with elementary school kids to more 
 	    			advanced concepts of JavaScript programming with students 
-	    			at MakerSquare. 
+	    			at Hack Reactor. 
 	    		</p>
 	    	</div>
 	    </div>
