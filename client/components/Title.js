@@ -1,6 +1,12 @@
 import React from 'react';
 
-console.log('¯\\_(ツ)_/¯')
+console.log("█▀▄▀█ ▄█ █  █▀ ▄███▄          ▄▄▄▄▄   ██  ▀▄    ▄  ▄▄▄▄▄        ▄  █ ▄█   ▄ ");
+console.log("█ █ █ ██ █▄█   █▀   ▀        █     ▀▄ █ █   █  █  █     ▀▄     █   █ ██  █  ");
+console.log("█ ▄ █ ██ █▀▄   ██▄▄        ▄  ▀▀▀▀▄   █▄▄█   ▀█ ▄  ▀▀▀▀▄       ██▀▀█ ██ █   ");
+console.log("█   █ ▐█ █  █  █▄   ▄▀      ▀▄▄▄▄▀    █  █   █   ▀▄▄▄▄▀        █   █ ▐█ █   ");
+console.log("   █   ▐   █   ▀███▀                     █ ▄▀                     █   ▐     ");
+console.log("  ▀       ▀                             █                        ▀      ▀   ");
+console.log("                                       ▀                                    ");
 
 const Title = () => {
 	return (
