@@ -19,7 +19,7 @@ const Projects = () => {
 	  			<h1>Austin Public Art</h1>
 	  			<h4>Find public art in Austin and add them to your favorites</h4>
 	  		</div>
-	  		<a href="http://austinart.herokuapp.com/">
+	  		<a href="http://austin-public-art.herokuapp.com/">
 	  			<img src="assets/Screen Shot 2016-10-09 at 12.38.59 AM.png" alt="austin-art" />
 	  		</a>
 	  	</div>
