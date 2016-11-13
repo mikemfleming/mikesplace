@@ -102,6 +102,7 @@ button > i {
 
 .skill-box {
 	flex-basis: 23em;
+	margin-bottom: 5%;
 }
 
 .projects {

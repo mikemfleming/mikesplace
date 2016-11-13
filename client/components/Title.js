@@ -13,7 +13,7 @@ const Title = () => {
 	  <div className="title">
 	  	<div className="title-text">
 		    <h1>Mike M Fleming</h1>
-		    <p>Writing clean and reusable code is my passion.</p>
+		    <p>Software Engineer and Teaching Instructor</p>
 	    </div>
 	  </div>
 	)
