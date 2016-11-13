@@ -11,7 +11,10 @@ console.log("                                       ▀                         
 const Title = () => {
 	return (
 	  <div className="title">
-	    <h1>Mike M Fleming</h1>
+	  	<div className="title-text">
+		    <h1>Mike M Fleming</h1>
+		    <p>Writing clean and reusable code is my passion.</p>
+	    </div>
 	  </div>
 	)
 }
