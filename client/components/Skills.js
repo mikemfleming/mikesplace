@@ -10,32 +10,29 @@ const Skills = () => {
 	    <div className="skills-gallery">
 	    	<div className="skill-box">
 	    		<i className="fa fa-magic icon" aria-hidden="true"></i>
-	    		<h4><b>UX/UI</b></h4>
-	    		<p><b>
+	    		<h4>UX/UI</h4>
+	    		<p>
 	    			I work together with my team to transorm ideas into well
 	    			thought out designs with an emphasis on user experience.
-	    			I'm all about putting in the work early on to ensure a 
-	    			solid foundation for the duration of the project.
-	    		</b></p>
+	    		</p>
 	    	</div>
 	    	<div className="skill-box">
 	    		<i className="fa fa-code icon" aria-hidden="true"></i>
-	    		<h4><b>Code</b></h4>
-	    		<p><b>
+	    		<h4>CODE</h4>
+	    		<p>
 	    			I build things with HTML5, CSS3 and a heavy dose of JavaScript. 
 	    			I love coding things from scratch, but I'm no stranger to inheriting 
 	    			large codebases. 
-	    		</b></p>
+	    		</p>
 	    	</div>
 	    	<div className="skill-box">
 	    		<i className="fa fa-diamond icon" aria-hidden="true"></i>
-	    		<h4><b>Teaching</b></h4>
-	    		<p><b>
-	    			I lead classes on everything from the fundamentals of
-	    			HTML and CSS with elementary school kids to more 
-	    			advanced concepts of JavaScript programming with students 
-	    			at Hack Reactor. 
-	    		</b></p>
+	    		<h4>TEACHING</h4>
+	    		<p>
+	    			I lead classes on JavaScript, HTML, and CSS with students in 
+	    			elementary school and Hack Reactor. I'm very proud of my students,
+	    			young and old.
+	    		</p>
 	    	</div>
 	    </div>
 	  </div>

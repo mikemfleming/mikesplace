@@ -75,14 +75,6 @@ h1 {
 	margin-bottom: 5%;
 }
 
-.icon, .skills > .content-text > h1 {
-	text-shadow:
-	    -1px -1px 0 #222222,
-	    1px -1px 0 #222222,
-	    -1px 1px 0 #222222,
-	    1px 1px 0 #222222;
-}
-
 .icon {
 	font-size: 5em;
 	width: 100%;
@@ -212,7 +204,14 @@ button {
 		width: 15em;
 	}
 
+	.skill-box p {
+		font-size: 17px;
+	}
 
+	.skill-box h4 {
+		margin-bottom: 10%;
+		font-size: 22px;
+	}
 
 	.contact {
 		min-height: 70vh;
