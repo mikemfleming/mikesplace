@@ -112,6 +112,7 @@ button > i {
 
 .projects {
 	background-color: #FCFCFC;	
+	padding: 3%;
 }
 
 .contact {
@@ -135,6 +136,7 @@ h1 {
 
 .title-text {
 	text-align: center;
+	text-shadow: 1px 1px black;
 }
 
 .title-text > p {
@@ -229,8 +231,11 @@ button {
 	}
 
 	.overlord > a > img, .gps > a > img, .austin-art > a > img, .click-party > a > img {
-		height: 28em;
-		width: 28em;
+		height: 20em;
+		width: 20em;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.title {

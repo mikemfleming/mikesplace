@@ -7,7 +7,7 @@ const Projects = () => {
 	  	<div className="overlord">
 	  		<div className="content-text">
 	  			<h1>Overlord</h1>
-	  			<h4>Optimize your company’s efficiency with this game themed management tool</h4>
+	  			<h4>Optimize your efficiency with this game themed management tool</h4>
 	  		</div>
 	  		<a href="https://github.com/repowranglers/overlord">
 	  			<img src="assets/Screen Shot 2016-10-09 at 12.52.10 AM.png" alt="overlord" />
