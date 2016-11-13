@@ -4,6 +4,10 @@
 
 /*SECTIONS*/
 
+.social-media {
+	text-align: center;
+}
+
 h1 {
 	font-family: 'Lobster', cursive;
 }
@@ -255,13 +259,12 @@ button {
 	}
 	
 	.projects > .gps, .projects > .austin-art, .projects > .overlord, .projects > .click-party {
-		width: 50%;
+		width: 40em;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
 		flex-wrap: wrap;
-		order: 1;
 	}
 
 	.social-media, .welcome > .content-text {
