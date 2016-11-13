@@ -7,7 +7,8 @@ const Welcome = () => {
 		  <div className="content-text">
 		  	<h1>Hey, there!</h1>
 		  	<p>
-		  		My name is Mike and I am a software engineer and teacher based out of Austin, Texas. 
+		  		My name is Mike and I am a software engineer and teacher based out of Austin, Texas.
+		  		In my spare time I love to take photos, too. Check out my <a href="http://mikemfleming.tumblr.com/">portfolio</a>.  
 		  	</p>
 		  	<p>
 			  	I currently work at <a href="http://www.hackreactor.com/">
