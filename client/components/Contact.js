@@ -17,8 +17,8 @@ class Contact extends Component {
 		return (
 		  <div className="contact">
 		    
-		    { this.state.showMessage ? 
-		    	<Message handleSubmit={this.handleSubmit.bind(this)} /> :
+		    { this.state.showMessage 
+		    	? <Message handleSubmit={this.handleSubmit.bind(this)} /> :
 		    	<div className="cloud">
 		    		<img src="assets/CloudDude_0002_fcfcfc.png" />
 		    		<h4>Talk to you soon!</h4>

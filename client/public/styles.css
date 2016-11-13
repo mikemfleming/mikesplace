@@ -216,6 +216,10 @@ button {
 
 @media only screen and (min-device-width: 668px) {
 
+	.cloud {
+		width: 40%;
+	}
+
 	.cloud > img {
 		margin-left: 25%;
 		width: 15em;
@@ -323,6 +327,16 @@ button {
 /* ****** IPHONE 6 AND SMALLER ****** */
 
 @media only screen and (max-device-width: 667px) {
+
+	.title-text {
+		padding-top: 75%;
+	}
+
+	.cloud {
+		width: 40%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 
 	.cloud > img {
 		margin-left: 25%;
