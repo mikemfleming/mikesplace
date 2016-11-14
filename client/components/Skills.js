@@ -5,7 +5,7 @@ const Skills = () => {
 	  <div className="skills">
 	    <div className="content-text">
 	    	<h1>My Skills</h1>
-	    	<h4><b>Making really cool things is my passion.</b></h4>
+	    	<h4><b>Making cool things work well is my passion.</b></h4>
 	    	<h4><b>Writing clean and reusable code is just how I do it.</b></h4>
 	    </div>
 	    <div className="skills-gallery">

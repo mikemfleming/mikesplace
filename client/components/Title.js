@@ -7,6 +7,7 @@ console.log("█   █ ▐█ █  █  █▄   ▄▀      ▀▄▄▄▄▀ 
 console.log("   █   ▐   █   ▀███▀                     █ ▄▀                     █   ▐     ");
 console.log("  ▀       ▀                             █                        ▀      ▀   ");
 console.log("                                       ▀                                    ");
+console.log("Check out my source code here: github.com/mikemfleming/mikesplace")
 
 const Title = () => {
 	return (

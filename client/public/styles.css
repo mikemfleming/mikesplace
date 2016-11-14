@@ -216,6 +216,10 @@ button {
 
 @media only screen and (min-device-width: 668px) {
 
+	.welcome > .content-text > p {
+		padding: 10px;
+	}
+
 	.cloud {
 		width: 40%;
 	}
