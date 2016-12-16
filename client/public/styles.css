@@ -40,7 +40,7 @@ h1 {
 
 
 .title {
-	background-image: url('https://scontent-dft4-2.xx.fbcdn.net/t31.0-8/12191245_10204888988855012_6857313823967303381_o.jpg');
+	background-image: url('../assets/banner.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
